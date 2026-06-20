@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# 💰 Debt Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **React + TypeScript + Vite** web application for managing personal debts, contacts, and financial tracking in a clean dashboard UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+### 📊 Dashboard
+- Overview of total debts and summaries
+- Visual charts for tracking financial activity
+- Quick access to recent debt records
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 💳 Debts System
+- Add new debts (credit / debit)
+- View detailed debt information per person
+- Filter and search debts
+- Track who owes you and who you owe
 
-## Expanding the ESLint configuration
+> ⚠️ Note: Edit functionality on the Debts page is currently not working and will be fixed in a future update.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 👤 Authentication
+- User login and registration system
+- Secure session handling
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🧑 Profile
+- View and manage user profile details
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🌗 Theme System
+- Light / Dark mode toggle
+- Persistent theme settings
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+### 🚪 Logout
+- Secure logout functionality
+
+---
+
+## 🧭 Pages Overview
+
+- **Dashboard** – Overview of financial status
+- **Debts** – Manage all debts
+- **Debt Details** – View full details of a specific person’s debt history
+- **Contacts** – Manage contacts related to debts
+- **Profile** – User account settings
+- **Registration / Login** – Authentication system
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ React
+- 🔷 TypeScript
+- ⚡ Vite
+- 🎨 Tailwind CSS (assumed from UI usage)
+- 🧩 ShadCN UI components
+- 🔄 Zustand (state management)
+- 🌐 Axios (API requests)
+- 🧪 Lucide Icons
+
+---
+
+## 📁 Project Structure (simplified)
